@@ -10,80 +10,6 @@
 
 
 
-.box {
-    margin-top:30px;
-    margin-left: 450px;
-    border: 3px solid rgb(46, 204, 113);
-    background-color:white;
-    text-align: center;
-    width: 500px;
-    padding: 103px;
-    top: 20%;
-    height: 590px;
-}
-
-.heading {
-    font-size: 35px;
-    text-align: center;
-    color:black;
-    font-weight: 500;
-}
-
-.box input[type='text'],
-.box input[type='tel'],
-.box textarea[type='text']
-{
-    border: 0px;
-    text-align: center;
-    display: block;
-    width: 210px;
-    margin: 15px auto;
-    padding: 14px 10px;
-    font-size: 16px;
-    color: black;
-    border: 2px solid#3498db;
-    background: none;
-    outline: none;
-    border-radius: 24px;
-
-}
-
-.box input[type='text']:focus,
-.box input[type='tel']:focus,
-.box textarea[type='text']:focus
-{
-    width: 280px;
-    border-color: #2ecc71;
-    transition: 0.25s;
-    color:black
-}
-
-.box input[type='submit'] {
-    
-    margin-top:60px;
-    margin-left:20px;
-    background: none;
-    border: 2px solid #2ecc71;
-    border-radius: 24px;
-    font-size: 15px;
-    color: black;
-    width: 130px;
-    padding: 12px 14px;
-    transition: 0.25s;
-    cursor: pointer;
-    outline: none;
-    
-}
-
-.box input[type='submit']:hover {
-    background-color: #2ecc71;
-    color: black;
-    width: 200px;
-}
-
-::placeholder { 
-  color:grey;
-}
 
 
 /* mouse over link */
@@ -96,16 +22,17 @@
 <body>
         <!--Menu-->
         <div class="header">
-         <a class="logo-heading" ><h1>Chaser Cycles</h1></a>
-         <a href="Home.html"></a><img src="images/logo.png" width="30px" alt="Cycle logo"></a>
-     
+         <a class="logo-heading" href="Home.html"><h1>Chaser Cycles</h1></a>
+         
          <div class="header-right">
            
              <a href="index.html">Home</a>
              <a href="commodities.html">Product</a>
              <a href="newsletter.html">Newsletter</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="aboutus.html">About us</a>
              <a href="contactus.html">Contact us</a>
-             <a href="Gallery.html">Gallery</a>
+             
          </div>
        </div>
 
@@ -115,11 +42,17 @@
         <h1 class="heading">Contact us:</h1>
         
         <input type="text" placeholder="Username" >
+        
+        
         <input type="text" placeholder="Email" >
         <input type="tel" placeholder="Phone" id="Contact No.">
         <textarea type="text" placeholder="Message"  name="Message"></textarea>
-        <input type="submit" value="Submit" >
+        <button type="submit" value="Submit" name="Submit">Submit</button>
+        </div>
+        
+        
     </div>
+    
 
       <!--Brand widget-->
         <div class="brands">
@@ -140,6 +73,7 @@
                     <div class="col-5">
                         <img src="images/logo/logo5.jpg" alt="logo5">
                     </div>
+                    
                 </div>
             </div>
         </div>

@@ -10,124 +10,9 @@
                 margin:0;
                 padding:0;
                 box-sizing: border-box;
-                font-family: sans-serif;
-            }
-            input{
-                display:none;
-            }
-            .gallery{
-                width:100%;
-              text-align: center;
-            }
-            .gallery h1{
-                font-weight: normal;
-                font-size: 35px;
-                position: relative;
-                margin: 40px 0;
-            }
-            .gallery h1::before{
-                content: '';
-                position: absolute;
-                width: 100px;
-                height: 3px;
-                background-color: crimson;
-                bottom: -10px;
-                left: 45%;
-                transform: translate (-50%);
-                animation: animate;
-            }
-            @keyframes animate{
-                0%{
-                    width: 100px;
-                }
-            
-            0%{
-                    width: 200px;
-                }
-            }
-            .top-content{
-                background-color: lightgrey;
-                width: 90%;
-                margin: 0 auto 20px auto;
-                height: 60px;
-                display: flex;
-                align-items: center;
-            }
-           .gallery .top-content h3{
-                height: 100%;
-                background-color: lightgrey;
-                line-height: 60px;
-                padding: 0 50px;
-                color:white;
-                text-align: center;
-            }
-           .top-content label{
-                display: inline-block;
-                height: 100%;
-                margin: 0 20px;
-                line-height: 60px;
-                font-size: 18px;
-                color: gray;
-                cursor: pointer;
-                transition: color .5s;
-            }
-            .top content label:hover{
-                color: black;
-            }
-            .photo-gallery{
-                width: 90%;
-                margin: auto;
-                display: grid;
-                grid-template-columns: repeat(4,1fr);
-                grid-gap: 20px;
-            }
-            .pic{
-                position: relative;
-                height: 230px;
-                border-radius: 10px;
-                box-shadow: 3px 3px 5px lightgray;
-                cursor: pointer;
-                transition: .5s;
-            }
-            
-            .pic img{
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-            }
-            .pic::before{
-                content: "PHOTO GALLERY";
-                position: absolute;
-                top:50%;
-                left:50%;
-                transform: translate(-50%,-50%);
-                color: white;
-                font-size: 22px;
-                font-weight: bold;
-                width: 100%;
-                margin-top: -100px;
-                opacity: 0;
-                transition: .3s;
-                transition-delay: .2s;
-                z-index:1;
-           }
-            .pic:after{
-                content: "";
-                position: absolute;
-                width: 100%;
-                bottom: 0;
-                left: 0;
-                border-radius: 10px;
-                height: 0;
-                background-color: rgba(0, 0, 0, -4);
-                transition:.3s;
-            }
-            .pic:hover::after{
-                height: 100%;
-            }
-            .pic:hover::before{
-                margin-top:0;
-                opacity: 1;
+                font-family: ubuntu, sans-serif;
+                
+               
             }
 
         </style>
@@ -137,34 +22,104 @@
         <!--Header-->
      
         <div class="header">
-            <a class="logo-heading" ><h1>Chaser Cycles</h1></a>
-            <a href="Home.html"></a><img src="images/logo.png" width="30px" alt="Cycle logo"></a>
-        
+            <a class="logo-heading" href="index.html"><h1>Chaser Cycles</h1></a>
+           
             <div class="header-right">
               
                 <a href="index.html">Home</a>
                 <a href="commodities.html">Product</a>
                 <a href="newsletter.html">Newsletter</a>
-                <a href="contactus.html">Contact us</a>
                 <a href="Gallery.html">Gallery</a>
+                <a href="aboutus.html">About us</a>
+                <a href="contactus.html">Contact us</a>
+                
             </div>
           </div>
 
-          <div class="gallery">
-
-            <h1>Latest News</h1>
-                <div class="top-content">
-                    <h3>Chaser Cycle Rental Service</h3>
-             
-               </div>
-       
-        <div class="photo-gallery">
-            <div class="pic featured">
-                <img src="images/bicycle1.png">
-            </div>  
           
-            </div>  
+       
+        
+
         </div>
+        <div class="Newsletter" style="width: 100%; ">
+         <table style="border: none; margin: 0 auto ; padding: 0;">
+        <tr>
+            <td style="padding: 0; background-color: #FFFFFF;">
+
+                    <header class="NewsHeader"style="text-align: center;">
+                        <h1>LATEST NEWS</h1>
+                        <p>Stay in the loop. See what we're up to this month!</p>
+                    </header>
+             
+
+                    <div style="padding: 0; width:100%;" >
+                        <img src="images/featuredproduct/bicycle5.jpg" alt="email hero image" style=" background-size: cover; width: 100%;">
+                    </div>
+                    <div class= "InnerTitle" style="margin-top:30px; margin-left:150px">
+                    <h2>WHAT'S NEW</h2>
+
+                    <ul style="padding: 0 20px;">
+                        <li style="list-style-type: none; padding-bottom: 50px; margin-left: 0;">
+                            <div class="remove-flex-mobile" style="display:flex; justify-content:space-between;">
+                                <div style="flex-basis: 90%;" class="remove-flex-basis-mobile">
+                                    <img src="images/race.jpg" alt="" style="display: block; width: 70%; padding: 5%; ">
+                                </div>
+                                <div style="flex-basis: 100%; padding-left: 5px; margin-left:-90px; margin-top:2%" class="remove-flex-basis-mobile">
+                                    <h3 style="text-transform: uppercase; font-size: 28px; margin-top: 0; margin-bottom: 10px; color: #4A4A4A" class="list-header">CYCLING RACE WILL BE HELD SOON</h3>
+                                    <p style="padding-bottom: 20px; margin-top: 0; color: #4A4A4A; ">
+                                    Support our team. Catch the cycling race this season at the campus field. Cycle sport is competitive physical activity using bicycles. There are several categories of bicycle racing including road bicycle racing, time trialling, cyclo-cross, mountain bike racing, track cycling, BMX, and cycle speedway.
+                                    It increases the dissipation of heat. "In addition to the physical recovery, cooling down provides an opportunity to mentally relax from the stresses of racing and to personally reflect on the race. Cycling keeps you physically and mentally fit.
+                                    </p>
+                                    <a href="" style="text-decoration: none; text-transform: uppercase; cursor: pointer; line-height: 1.1em; letter-spacing: 0; padding: 12px; background: #EAAF47; color: #4A4A4A; border-radius: 8px; text-align: center; font-size: 16px; font-weight: bold; box-sizing: border-box;">Read More</a>
+                                </div>
+                            </div>
+                        </li>
+                        
+
+                        <li style="list-style-type: none; padding-bottom: 50px; margin-left: 0;">
+                            <div class="remove-flex-mobile" style="display:flex; justify-content:space-between;">
+                                <div style="flex-basis: 90%;" class="remove-flex-basis-mobile">
+                                    <img src="images/cyclingImp.jpg" alt="" style="display: block; width: 70%; padding: 5%; ">
+                                </div>
+                                <div style="flex-basis: 100%; padding-left: 5px; margin-left:-90px; margin-top:2%" class="remove-flex-basis-mobile">
+                                    <h3 style="text-transform: uppercase; font-size: 28px; margin-top: 0; margin-bottom: 10px; color: #4A4A4A" class="list-header">WHY CYCLING IS IMPORTANT, REPORT</h3>
+                                    <p style="padding-bottom: 20px; margin-top: 0; color: #4A4A4A; ">
+                                    To be fit and healthy you need to be physically active. Regular physical activity can help protect you from serious diseases such as obesity, heart disease, cancer, mental illness, diabetes and arthritis. Riding your bicycle regularly is one of the best ways to reduce your risk of health problems associated with a sedentary lifestyle.
+
+                                    Cycling is a healthy, low-impact exercise that can be enjoyed by people of all ages, from young children to older adults. It is also fun, cheap and good for the environment.
+                                    </p>
+                                    <a href="" style="text-decoration: none; text-transform: uppercase; cursor: pointer; line-height: 1.1em; letter-spacing: 0; padding: 12px; background: #EAAF47; color: #4A4A4A; border-radius: 8px; text-align: center; font-size: 16px; font-weight: bold; box-sizing: border-box;">Read More</a>
+                                </div>
+                            </div>
+                        </li>
+                       
+                        <li style="list-style-type: none; padding-bottom: 50px; margin-left: 0;">
+                            <div class="remove-flex-mobile" style="display:flex; justify-content:space-between;">
+                                <div style="flex-basis: 90%;" class="remove-flex-basis-mobile">
+                                    <img src="images/work.jpg" alt="" style="display: block; width: 70%; padding: 5%; ">
+                                </div>
+                                <div style="flex-basis: 100%; padding-left: 5px; margin-left:-90px; margin-top:2%" class="remove-flex-basis-mobile">
+                                    <h3 style="text-transform: uppercase; font-size: 28px; margin-top: 0; margin-bottom: 10px; color: #4A4A4A" class="list-header">20 reasons to cycle to work</h3>
+                                    <p style="padding-bottom: 20px; margin-top: 0; color: #4A4A4A; ">
+                                    1. Reduce risk of covid-19 contagion: 
+                                    The current advice from the Department for Transport is to cycle or walk when you can. There is a greater circulation of air and less risk you will come into contact with others when you cycle to work.  
+                                   <br/>
+                                   <br/>
+                                    2. It’s good for the economy
+                                    Cyclists are better for the local and national economy than motorists. Cyclists are more likely to stop and shop, benefiting local retailers.
+
+                                    If cycle use increases from 2% of all journeys (current levels) to 10% by 2025 and 25% by 2050, the cumulative benefits would be worth £248bn between now and 2050 for England - yielding annual benefits in 2050 worth £42bn.
+                                   </p>
+                                    <a href="" style="text-decoration: none; text-transform: uppercase; cursor: pointer; line-height: 1.1em; letter-spacing: 0; padding: 12px; background: #EAAF47; color: #4A4A4A; border-radius: 8px; text-align: center; font-size: 16px; font-weight: bold; box-sizing: border-box;">Read More</a>
+                                </div>
+                            </div>
+                        </li>
+                       
+                        </div>
+                        
+                    </ul>
+                    </div>
+
            <!--Brand widget-->
            <div class="brands">
             <div class="showcasesContainer">

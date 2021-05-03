@@ -10,125 +10,8 @@
                 margin:0;
                 padding:0;
                 box-sizing: border-box;
-                font-family: sans-serif;
+                font-family: ubuntu, sans-serif;
             }
-            input{
-                display:none;
-            }
-            .gallery{
-                width:100%;
-              text-align: center;
-            }
-            .gallery h1{
-                font-weight: normal;
-                font-size: 35px;
-                position: relative;
-                margin: 40px 0;
-            }
-            .gallery h1::before{
-                content: '';
-                position: absolute;
-                width: 100px;
-                height: 3px;
-                background-color: crimson;
-                bottom: -10px;
-                left: 45%;
-                transform: translate (-50%);
-                animation: animate;
-            }
-            @keyframes animate{
-                0%{
-                    width: 100px;
-                }
-            
-            0%{
-                    width: 200px;
-                }
-            }
-            .top-content{
-                background-color: lightgrey;
-                width: 90%;
-                margin: 0 auto 20px auto;
-                height: 60px;
-                display: flex;
-                align-items: center;
-            }
-           .gallery .top-content h3{
-                height: 100%;
-                background-color: lightgrey;
-                line-height: 60px;
-                padding: 0 50px;
-                color:white;
-                text-align: center;
-            }
-           .top-content label{
-                display: inline-block;
-                height: 100%;
-                margin: 0 20px;
-                line-height: 60px;
-                font-size: 18px;
-                color: gray;
-                cursor: pointer;
-                transition: color .5s;
-            }
-            .top content label:hover{
-                color: black;
-            }
-            .photo-gallery{
-                width: 90%;
-                margin: auto;
-                display: grid;
-                grid-template-columns: repeat(4,1fr);
-                grid-gap: 20px;
-            }
-            .pic{
-                position: relative;
-                height: 230px;
-                border-radius: 10px;
-                box-shadow: 3px 3px 5px lightgray;
-                cursor: pointer;
-                transition: .5s;
-            }
-            .pic img{
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-            }
-            .pic::before{
-                content: "PHOTO GALLERY";
-                position: absolute;
-                top:50%;
-                left:50%;
-                transform: translate(-50%,-50%);
-                color: white;
-                font-size: 22px;
-                font-weight: bold;
-                width: 100%;
-                margin-top: -100px;
-                opacity: 0;
-                transition: .3s;
-                transition-delay: .2s;
-                z-index:1;
-           }
-            .pic:after{
-                content: "";
-                position: absolute;
-                width: 100%;
-                bottom: 0;
-                left: 0;
-                border-radius: 10px;
-                height: 0;
-                background-color: rgba(0, 0, 0, -4);
-                transition:.3s;
-            }
-            .pic:hover::after{
-                height: 100%;
-            }
-            .pic:hover::before{
-                margin-top:0;
-                opacity: 1;
-            }
-
         </style>
   </head>
 
@@ -136,16 +19,17 @@
         <!--Header-->
      
         <div class="header">
-            <a class="logo-heading" ><h1>Chaser Cycles</h1></a>
-            <a href="Home.html"></a><img src="images/logo.png" width="30px" alt="Cycle logo"></a>
-        
+            <a class="logo-heading" href="index.html"><h1>Chaser Cycles</h1></a>
+            
             <div class="header-right">
               
                 <a href="index.html">Home</a>
                 <a href="commodities.html">Product</a>
                 <a href="newsletter.html">Newsletter</a>
-                <a href="contactus.html">Contact us</a>
                 <a href="Gallery.html">Gallery</a>
+                <a href="aboutus.html">About us</a>
+                <a href="contactus.html">Contact us</a>
+                
             </div>
           </div>
 
@@ -198,10 +82,14 @@
             </div>
             <div class="pic recent">
                 <img src="images/featuredproduct/bicycle13.jpg">
+               
             </div>  
+            
         </div>
+         
            <!--Brand widget-->
            <div class="brands">
+           
             <div class="showcasesContainer">
                 <div class="row">
                     <div class="col-5">
