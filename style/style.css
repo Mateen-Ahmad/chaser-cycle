@@ -542,7 +542,7 @@ input{
     opacity: 1;
 }
 
-/*Contact us Page*/
+/*Contact Us*/
 .box {
     margin-top:30px;
     margin-left: 450px;
@@ -612,6 +612,7 @@ input{
 ::placeholder { 
   color:white;
 }
+
 /*NewsLetter*/
 .Newsletter .NewsHeader h1{
     font-size: 58px;
@@ -664,7 +665,7 @@ input{
       }
       
     
-/*footer*/
+/*Footer*/
 footer{
     background: #077b8a;
     color:white;
